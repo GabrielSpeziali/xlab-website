@@ -49,3 +49,28 @@
 				});
 
 })(jQuery);
+// Função para verificar se o elemento está visível na tela
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Adiciona a classe fade-in ou slide-in quando o elemento está visível
+function checkAnimations() {
+    var fadeElements = document.querySelectorAll('.fade-in, .slide-in-left');
+    
+    fadeElements.forEach(function(el) {
+        if (isElementInViewport(el)) {
+            el.classList.add('visible');
+        }
+    });
+}
+
+// Executa ao rolar a página
+window.addEventListener('scroll', checkAnimations);
+window.addEventListener('load', checkAnimations);

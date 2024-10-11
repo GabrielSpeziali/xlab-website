@@ -1,99 +1,132 @@
 <!DOCTYPE HTML>
-<!--
-	Halcyonic by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>X- Lab - Quiz</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="subpage">
-		<div id="page-wrapper" >
 
-			<!-- Header -->
-				<section id="header">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="col-12">
+<head>
+    <title>X-Lab - Quiz de Termologia</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-									<!-- Logo -->
-										<a href="" id="logo"><img src="images/1.png" alt=""></a>
-	
-									<!-- Nav -->
-									<nav id="nav">
-										<a href="index.html">Homepage</a>
-										<a href="down.html">Download</a>
-										<a href="quiz.html">Quiz</a>
-										<a href="sobre.html">Sobre</a>
-									</nav>
-								</div>
-						</div>
-					</div>
-				</section>
+<body class="subpage">
+    <div id="page-wrapper">
 
-			<!-- Content -->
-				<section id="content" >
-					<div class="container" >
-						
-							
-							<div class="col-9 col-12-medium imp-medium" style="text-align: center;">
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
 
-								<!-- Main Content -->
-									<section >
-										<header>
-											<h2>Quiz</h2>
-											<h3>Aqui você pode fazer um teste para saber se você realmente aprendeu o conteúdo de termologia citado no jogo X-Lab</h3>
-											<p>Antes de fazer o Quiz é necessário que você tenha o conhecimento passaod no jogo X-Lab.</p>
-										</header>
-										<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUN87k9X2IxGFyG1cOGOVUJ1IbPVPa5C_zC-N1qshJ5w9dOg/viewform?embedded=true" style="overflow:scroll; width:80%;"  height="520" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-									</section>
-							</div>
-						
-					</div>
-				</section>
+                        <!-- Logo -->
+                        <a href="" id="logo"><img src="images/1.png" alt=""></a>
 
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
+                        <!-- Nav -->
+                        <nav id="nav">
+                            <a href="index.html">Homepage</a>
+                            <a href="down.html">Download</a>
+                            <a href="quiz.html">Quiz</a>
+                            <a href="sobre.html">Sobre</a>
+                        </nav>
 
-								
+                    </div>
+                </div>
+            </div>
+        </section>
 
-							</div>
-							
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="col-9 col-12-medium imp-medium">
+                    <!-- Main Content -->
+                    <section>
+                        <header>
+                            <h2>Quiz de Termologia</h2>
+                            <h3>Teste seus conhecimentos sobre termologia!</h3>
+                            <p>Responda as perguntas abaixo e veja sua pontuação no final.</p>
+                        </header>
+                        <div id="quiz-container">
+                            <form id="quizForm">
+                                <div class="question">
+                                    <p><strong>1. O que é temperatura?</strong></p>
+                                    <label><input type="radio" name="q1" value="0"> A quantidade de calor em um
+                                        corpo</label>
+                                    <label><input type="radio" name="q1" value="1"> A medida do grau de agitação das
+                                        partículas</label>
+                                    <label><input type="radio" name="q1" value="0"> A transferência de calor</label>
+                                </div>
 
-								<!-- Blurb -->
-									<section>
-										<h2 style="text-align: center;">Sinopse do Jogo</h2>
-										<p>
-											Em X-Lab, mergulhe em uma emocionante aventura protagonizada por uma criatura formada de pura energia térmica. Criada acidentalmente em um laboratório futurista, essa forma nova forma de vidafoge das garras de cientistas que tentam controlar seus poderes únicos. Neste jogo educativo 2D de plataforma, explore o laboratório, resolva desafios termológicos e descubra os segredos da termologia enquanto enfrenta experimentos descontrolados. Prepare-se para uma jornada que mistura ação, aprendizado e quebra-cabeças, onde cada passo é uma oportunidade para dominar os segredos do mundo térmico e garantir a liberdade de Protagonius.
-										</p>
-									</section>
+                                <div class="question">
+                                    <p><strong>2. Qual é a unidade de medida da temperatura no Sistema
+                                            Internacional?</strong></p>
+                                    <label><input type="radio" name="q2" value="0"> Graus Fahrenheit</label>
+                                    <label><input type="radio" name="q2" value="1"> Kelvin</label>
+                                    <label><input type="radio" name="q2" value="0"> Graus Celsius</label>
+                                </div>
 
-							</div>
-						</div>
-					</div>
-				</section>
+                                <div class="question">
+                                    <p><strong>3. O que é calor?</strong></p>
+                                    <label><input type="radio" name="q3" value="1"> Energia térmica em trânsito</label>
+                                    <label><input type="radio" name="q3" value="0"> O mesmo que temperatura</label>
+                                    <label><input type="radio" name="q3" value="0"> Uma forma de matéria</label>
+                                </div>
 
-			<!-- Copyright -->
-			<div id="copyright">
-				&copy; X-Lab. Obrigado FUNEC Riacho |Design: <a href="http://html5up.net">HTML5 UP</a>
-			</div>
+                                <div class="question">
+                                    <p><strong>4. O que é equilíbrio térmico?</strong></p>
+                                    <label><input type="radio" name="q4" value="0"> Quando dois corpos têm a mesma
+                                        massa</label>
+                                    <label><input type="radio" name="q4" value="1"> Quando dois corpos trocam calor e
+                                        atingem a mesma temperatura</label>
+                                    <label><input type="radio" name="q4" value="0"> Quando dois corpos estão em
+                                        repouso</label>
+                                </div>
 
-		</div>
+                                <div class="question">
+                                    <p><strong>5. O que é condução térmica?</strong></p>
+                                    <label><input type="radio" name="q5" value="1"> Transferência de calor por contato
+                                        direto</label>
+                                    <label><input type="radio" name="q5" value="0"> Transferência de calor por ondas
+                                        eletromagnéticas</label>
+                                    <label><input type="radio" name="q5" value="0"> Transferência de calor por
+                                        movimentos de fluidos</label>
+                                </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                                <button type="button" class="animate" onclick="calcularResultado()">Ver
+                                    Resultado</button>
+                            </form>
+                            <div id="resultado" style="margin-top:20px;"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
 
-	</body>
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <h2 style="text-align: center;">Sinopse do Jogo</h2>
+                <p>Em X-Lab, mergulhe em uma emocionante aventura protagonizada por uma criatura formada de pura energia
+                    térmica. Criada acidentalmente em um laboratório futurista, essa forma nova forma de vidafoge das
+                    garras de cientistas que tentam controlar seus poderes únicos. Neste jogo educativo 2D de
+                    plataforma, explore o laboratório, resolva desafios termológicos e descubra os segredos da
+                    termologia enquanto enfrenta experimentos descontrolados. Prepare-se para uma jornada que mistura
+                    ação, aprendizado e quebra-cabeças, onde cada passo é uma oportunidade para dominar os segredos do
+                    mundo térmico e garantir a liberdade de Protagonius.</p>
+            </div>
+        </section>
+
+        <div id="copyright">
+            &copy; X-Lab. Obrigado FUNEC Riacho |Design: <a href="http://html5up.net">HTML5 UP</a>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/quiz.js"></script> <!-- Incluindo o novo arquivo JS -->
+</body>
+
 </html>
