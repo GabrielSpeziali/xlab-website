@@ -221,24 +221,9 @@ section:last-child,
 .container {
 	margin: 0 auto;
 	max-width: 100%;
-	width: 10px;
+	width: 1200px;
 }
 
-.container h1 {
-	color: #3591d8;
-}
-
-.container h2 {
-    color: #3591d8;
-}
-
-.container h3 {
-    color: #3591d8;
-}
-
-.container p {
-	color: #3591d8;
-}
 @media screen and (max-width: 1680px) {
 
 	.container {
@@ -963,7 +948,7 @@ section:last-child,
 	}
 
 	.row {
-		margin-top: 0px;
+		margin-top: -20px;
 		margin-left: -20px;
 	}
 
@@ -1656,6 +1641,7 @@ section:last-child,
 	text-shadow: -1px -1px 1px rgba(0, );
 
 	/* Mudanças para o texto não vazar*/
+	padding: 10px; /* Adicionado padding para espaçamento interno */
     overflow: hidden; /* Impede que o conteúdo vaze */
 }
 
@@ -1689,7 +1675,7 @@ section:last-child,
 	position: absolute;
 	right: 0;
 	bottom: 35px;
-	font-weight: 100;
+	font-weight: 200;
 
 	/* Mudanças para o texto não vazar*/
 	margin-right: 20px;
@@ -1727,6 +1713,10 @@ section:last-child,
         font-size: 1em;
         margin-left: 10px;
     }
+
+    #header {
+        padding: 10px; /* Ajusta o padding no header */
+    }
 }
 
 /* Banner */
@@ -1745,7 +1735,7 @@ section:last-child,
 #banner p {
 	color: #ffffff;
 	font-size: 2em;
-	font-weight: 100;
+	font-weight: 200;
 	line-height: 1.25em;
 	padding-right: 1em;
 	margin: 0 0 1em 0;
@@ -1828,13 +1818,8 @@ section:last-child,
 }
 
 #content h3 {
-	color: #70caeb;
+	color: #000000;
 	font-size: 1.25em;
-}
-
-#content p {
-    font-size: 1.1em;
-    color: #70caeb;
 }
 
 #content a {
@@ -1868,16 +1853,12 @@ section:last-child,
 
 #footer h2 {
 	font-size: 1.25em;
-	color: #ffffff;
+	color: #212f35;
 	margin: 0 0 1em 0;
 }
 
 #footer a {
 	color: #546b76;
-}
-
-#footer p {
-	color: white;
 }
 
 #footer .quote-list li {
@@ -2048,7 +2029,7 @@ section:last-child,
 		width: 100%;
 		z-index: 10001;
 		color: #fff;
-		background: #96cffa;
+		background: #078aef;
 		box-shadow: inset 0px -20px 70px 0px rgba(200, 220, 245, 0.1), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.1), 0px 1px 7px 0px rgba(0, 0, 0, 0.6);
 		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 	}
@@ -2164,26 +2145,6 @@ section:last-child,
 		-webkit-transform: translateX(0);
 		-ms-transform: translateX(0);
 		transform: translateX(0);
-	}
-
-	#titleBar img {
-		max-width: 150px; /* Tamanho padrão da logo */
-		height: auto;
-		object-fit: contain; /* Mantém a proporção da imagem */
-		transition: max-width 0.3s ease-in-out; /* Transição suave no redimensionamento */
-	}
-	
-	/* Responsividade da logo no titleBar */
-	@media screen and (max-width: 768px) {
-		#titleBar img {
-			max-width: 120px; /* Reduz o tamanho da logo em telas menores */
-		}
-	}
-	
-	@media screen and (max-width: 480px) {
-		#titleBar img {
-			max-width: 100px; /* Logo ainda menor em telas muito pequenas */
-		}
 	}
 
 }
@@ -2322,7 +2283,6 @@ section:last-child,
 }
 
 .question p {
-	color: #131c46;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
@@ -2361,35 +2321,3 @@ button:hover {
 	background-color: #3591d8;
 	transform: scale(1.1);
 }
-
-/* Estilo para a janela */
-.janela {
-    display: none; /* Oculto por padrão */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro meio transparente */
-}
-
-/* Conteúdo da janela */
-.jan-content {
-    background-color: #3c4c8f; 
-    color: #fff; 
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #70caeb; 
-    width: 50%; 
-    text-align: center;
-    border-radius: 10px;
-}
-
-
-/* Adiciona um efeito bagulhado */
-.jan-content p {
-    color: #ffffff;
-}
-
